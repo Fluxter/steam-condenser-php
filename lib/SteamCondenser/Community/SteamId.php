@@ -277,9 +277,9 @@ class SteamId extends XMLData {
      */
     protected function getBaseUrl() {
         if(empty($this->customUrl)) {
-            return "http://steamcommunity.com/profiles/{$this->steamId64}";
+            return "https://steamcommunity.com/profiles/{$this->steamId64}";
         } else {
-            return "http://steamcommunity.com/id/{$this->customUrl}";
+            return "https://steamcommunity.com/id/{$this->customUrl}";
         }
     }
 

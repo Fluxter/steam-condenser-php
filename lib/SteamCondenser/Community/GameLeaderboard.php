@@ -115,7 +115,7 @@ class GameLeaderboard {
      *         leaderboards
      */
     private static function loadLeaderboards($gameName) {
-        $url = "http://steamcommunity.com/stats/$gameName/leaderboards/?xml=1";
+        $url = "https://steamcommunity.com/stats/$gameName/leaderboards/?xml=1";
         $boardsData = new \SimpleXMLElement(file_get_contents($url));
 
         if(!empty($boardsData->error)) {

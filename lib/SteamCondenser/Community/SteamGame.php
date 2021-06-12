@@ -143,7 +143,7 @@ class SteamGame {
         if ($this->iconHash == null) {
             return null;
         } else {
-            return "http://media.steampowered.com/steamcommunity/public/images/apps/{$this->appId}/{$this->iconHash}.jpg";
+            return "https://media.steampowered.com/steamcommunity/public/images/apps/{$this->appId}/{$this->iconHash}.jpg";
         }
     }
 
@@ -176,7 +176,7 @@ class SteamGame {
         if ($this->logoHash == null) {
             return null;
         } else {
-            return "http://media.steampowered.com/steamcommunity/public/images/apps/{$this->appId}/{$this->logoHash}.jpg";
+            return "https://media.steampowered.com/steamcommunity/public/images/apps/{$this->appId}/{$this->logoHash}.jpg";
         }
     }
 
@@ -189,7 +189,7 @@ class SteamGame {
         if ($this->logoHash == null) {
             return null;
         } else {
-            return "http://media.steampowered.com/steamcommunity/public/images/apps/{$this->appId}/{$this->logoHash}_thumb.jpg";
+            return "https://media.steampowered.com/steamcommunity/public/images/apps/{$this->appId}/{$this->logoHash}_thumb.jpg";
         }
     }
 
@@ -220,7 +220,7 @@ class SteamGame {
      * @return string This game's store page
      */
     public function getStoreUrl() {
-        return "http://store.steampowered.com/app/{$this->appId}";
+        return "https://store.steampowered.com/app/{$this->appId}";
     }
 
     /**

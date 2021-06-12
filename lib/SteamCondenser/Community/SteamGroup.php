@@ -120,9 +120,9 @@ class SteamGroup extends XMLData {
      */
     public function getBaseUrl() {
         if(empty($this->customUrl)) {
-            return "http://steamcommunity.com/gid/{$this->groupId64}";
+            return "https://steamcommunity.com/gid/{$this->groupId64}";
         } else {
-            return "http://steamcommunity.com/groups/{$this->customUrl}";
+            return "https://steamcommunity.com/groups/{$this->customUrl}";
         }
     }
 
